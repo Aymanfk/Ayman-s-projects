@@ -1,9 +1,4 @@
-//
-//  MapView.swift
-//  ThruHiker
-//
-//  Created by Kai Linsley on 5/8/24.
-//
+
 
 import SwiftUI
 @_spi(Experimental) import MapboxMaps

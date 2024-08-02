@@ -1,9 +1,4 @@
-//
-//  CompletedView.swift
-//  testmpabox
-//
-//  Created by Kai Linsley on 5/20/24.
-//
+
 
 import SwiftUI
 

@@ -1,9 +1,3 @@
-//
-//  RoutCardView.swift
-//  ThruHiker
-//
-//  Created by Kai Linsley on 4/20/24.
-//
 
 //import SwiftUI
 //import HealthKit

@@ -1,9 +1,4 @@
-//
-//  ThruHikerTests.swift
-//  ThruHikerTests
-//
-//  Created by Kai Linsley on 4/9/24.
-//
+
 
 import XCTest
 @testable import ThruHiker

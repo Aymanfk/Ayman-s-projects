@@ -1,9 +1,4 @@
-//
-//  ThruHikerUITestsLaunchTests.swift
-//  ThruHikerUITests
-//
-//  Created by Kai Linsley on 4/9/24.
-//
+
 
 import XCTest
 

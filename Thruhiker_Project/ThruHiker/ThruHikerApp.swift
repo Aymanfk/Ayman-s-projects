@@ -1,9 +1,3 @@
-//
-//  ThruHikerApp.swift
-//  ThruHiker
-//
-//  Created by Kai Linsley on 5/1/24.
-//
 
 import SwiftUI
 import FirebaseCore

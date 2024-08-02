@@ -1,9 +1,4 @@
-//
-//  MapPreView.swift
-//  ThruHiker
-//
-//  Created by Gavin Lebo on 5/16/24.
-//
+
 
 import SwiftUI
 @_spi(Experimental) import MapboxMaps

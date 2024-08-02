@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  ThruHiker
-//
-//  Created by Kai Linsley on 4/9/24.
-//
+
 
 import SwiftUI
 

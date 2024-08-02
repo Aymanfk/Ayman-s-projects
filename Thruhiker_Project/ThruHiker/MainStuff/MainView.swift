@@ -1,9 +1,5 @@
 //
-//  MainView.swift
-//  ThruHiker
-//
-//  Created by Kai Linsley on 5/11/24.
-//
+
 import SwiftUI
 
 

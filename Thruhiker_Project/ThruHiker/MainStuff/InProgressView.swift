@@ -1,9 +1,5 @@
 //
-//  RouteExplorePage.swift
-//  ThruHiker
-//
-//  Created by Kai Linsley on 4/22/24.
-//
+
 
 import SwiftUI
 

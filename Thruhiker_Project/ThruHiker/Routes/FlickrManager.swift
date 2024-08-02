@@ -1,9 +1,4 @@
-//
-//  FlickrManager.swift
-//  ThruHiker
-//
-//  Created by Gavin Lebo on 5/17/24.
-//
+
 
 import Foundation
 import SwiftUI
