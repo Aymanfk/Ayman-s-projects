@@ -1,0 +1,14 @@
+{
+  "images" : [
+    {
+      "filename" : "DALL·E 2024-05-16 14.23.39 - A logo for a hiking app featuring a pixelated hiker. The hiker should be in a walking pose, wearing a backpack and a hat, and holding a walking stick.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

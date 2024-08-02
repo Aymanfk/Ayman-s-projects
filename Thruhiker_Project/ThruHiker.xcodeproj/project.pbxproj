@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		970EE6022BCB22C900BA8245 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 970EE6012BCB22C900BA8245 /* MapboxMaps */; };
+		970EF7B02BD6EFE200BA8245 /* JSONmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970EF7AF2BD6EFE200BA8245 /* JSONmanager.swift */; };
+		972620752BF764EC006A069A /* FlickrManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972620742BF764EC006A069A /* FlickrManager.swift */; };
+		972620772BF76C95006A069A /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972620762BF76C95006A069A /* WeatherManager.swift */; };
+		972620792BF92AB6006A069A /* Everest_mile_markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 972620782BF92AB6006A069A /* Everest_mile_markers.json */; };
+		9726207B2BF9303A006A069A /* Continental_mile_markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 9726207A2BF9303A006A069A /* Continental_mile_markers.json */; };
+		9726207D2BF93732006A069A /* JMB_mile_markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 9726207C2BF93732006A069A /* JMB_mile_markers.json */; };
+		975238982C02AD2100D7BE0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 975238972C02AD2100D7BE0D /* GoogleService-Info.plist */; };
+		97664A302C02B2460041845D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 97664A2F2C02B2460041845D /* FirebaseStorage */; };
+		97664A322C02B2FD0041845D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 97664A312C02B2FD0041845D /* FirebaseFirestore */; };
+		978670732BF69702009A018F /* AT_mile_markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 978670682BF69702009A018F /* AT_mile_markers.json */; };
+		978670742BF69702009A018F /* PCT_mile_markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 978670692BF69702009A018F /* PCT_mile_markers.json */; };
+		978670752BF69702009A018F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786706B2BF69702009A018F /* MapView.swift */; };
+		978670762BF69702009A018F /* RouteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786706C2BF69702009A018F /* RouteCardView.swift */; };
+		978670772BF69702009A018F /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786706D2BF69702009A018F /* RouteDetailView.swift */; };
+		978670782BF69702009A018F /* RouteExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786706E2BF69702009A018F /* RouteExploreView.swift */; };
+		978670792BF69702009A018F /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786706F2BF69702009A018F /* RouteView.swift */; };
+		9786707A2BF69702009A018F /* sampleRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978670702BF69702009A018F /* sampleRoutes.swift */; };
+		9786707B2BF69702009A018F /* HealthKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978670722BF69702009A018F /* HealthKitView.swift */; };
+		97CCB4BA2C08E02F00F62C2C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 97CCB4B92C08E02F00F62C2C /* PrivacyInfo.xcprivacy */; };
+		97D11C9E2BF6B58A00680BE9 /* JMT_mile_markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 97D11C9D2BF6B58A00680BE9 /* JMT_mile_markers.json */; };
+		97D11CA02BF6F70900680BE9 /* MapPreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D11C9F2BF6F70900680BE9 /* MapPreView.swift */; };
+		97F68F0E2C0154EF00CA9E6B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F68F0D2C0154EF00CA9E6B /* MainView.swift */; };
+		97F68F102C01557000CA9E6B /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F68F0F2C01557000CA9E6B /* CompletedView.swift */; };
+		97F68F132C0155B000CA9E6B /* InProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F68F122C0155B000CA9E6B /* InProgressView.swift */; };
+		97F68F152C01560500CA9E6B /* RoutesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F68F142C01560500CA9E6B /* RoutesViewModel.swift */; };
+		EEB1AF612BC65A930053526E /* ThruHikerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1AF602BC65A930053526E /* ThruHikerApp.swift */; };
+		EEB1AF632BC65A930053526E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1AF622BC65A930053526E /* ContentView.swift */; };
+		EEB1AF652BC65A940053526E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB1AF642BC65A940053526E /* Assets.xcassets */; };
+		EEB1AF682BC65A940053526E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB1AF672BC65A940053526E /* Preview Assets.xcassets */; };
+		EEB1AF722BC65A940053526E /* ThruHikerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1AF712BC65A940053526E /* ThruHikerTests.swift */; };
+		EEB1AF7C2BC65A940053526E /* ThruHikerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1AF7B2BC65A940053526E /* ThruHikerUITests.swift */; };
+		EEB1AF7E2BC65A940053526E /* ThruHikerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1AF7D2BC65A940053526E /* ThruHikerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEB1AF6E2BC65A940053526E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEB1AF552BC65A930053526E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEB1AF5C2BC65A930053526E;
+			remoteInfo = ThruHiker;
+		};
+		EEB1AF782BC65A940053526E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEB1AF552BC65A930053526E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEB1AF5C2BC65A930053526E;
+			remoteInfo = ThruHiker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		970EF7AF2BD6EFE200BA8245 /* JSONmanager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONmanager.swift; sourceTree = "<group>"; };
+		972620742BF764EC006A069A /* FlickrManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrManager.swift; sourceTree = "<group>"; };
+		972620762BF76C95006A069A /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		972620782BF92AB6006A069A /* Everest_mile_markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Everest_mile_markers.json; sourceTree = "<group>"; };
+		9726207A2BF9303A006A069A /* Continental_mile_markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Continental_mile_markers.json; sourceTree = "<group>"; };
+		9726207C2BF93732006A069A /* JMB_mile_markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JMB_mile_markers.json; sourceTree = "<group>"; };
+		972AE6D72BCB20A100F078B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		975238972C02AD2100D7BE0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		978670682BF69702009A018F /* AT_mile_markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AT_mile_markers.json; sourceTree = "<group>"; };
+		978670692BF69702009A018F /* PCT_mile_markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PCT_mile_markers.json; sourceTree = "<group>"; };
+		9786706B2BF69702009A018F /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9786706C2BF69702009A018F /* RouteCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteCardView.swift; sourceTree = "<group>"; };
+		9786706D2BF69702009A018F /* RouteDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
+		9786706E2BF69702009A018F /* RouteExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteExploreView.swift; sourceTree = "<group>"; };
+		9786706F2BF69702009A018F /* RouteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		978670702BF69702009A018F /* sampleRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sampleRoutes.swift; sourceTree = "<group>"; };
+		978670722BF69702009A018F /* HealthKitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitView.swift; sourceTree = "<group>"; };
+		97CCB4B92C08E02F00F62C2C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		97D11C9C2BF6A93000680BE9 /* ThruHiker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThruHiker.entitlements; sourceTree = "<group>"; };
+		97D11C9D2BF6B58A00680BE9 /* JMT_mile_markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JMT_mile_markers.json; sourceTree = "<group>"; };
+		97D11C9F2BF6F70900680BE9 /* MapPreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPreView.swift; sourceTree = "<group>"; };
+		97F68F0D2C0154EF00CA9E6B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		97F68F0F2C01557000CA9E6B /* CompletedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
+		97F68F122C0155B000CA9E6B /* InProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InProgressView.swift; sourceTree = "<group>"; };
+		97F68F142C01560500CA9E6B /* RoutesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesViewModel.swift; sourceTree = "<group>"; };
+		EEB1AF5D2BC65A930053526E /* ThruHiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThruHiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB1AF602BC65A930053526E /* ThruHikerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThruHikerApp.swift; sourceTree = "<group>"; };
+		EEB1AF622BC65A930053526E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEB1AF642BC65A940053526E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEB1AF672BC65A940053526E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEB1AF6D2BC65A940053526E /* ThruHikerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThruHikerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB1AF712BC65A940053526E /* ThruHikerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThruHikerTests.swift; sourceTree = "<group>"; };
+		EEB1AF772BC65A940053526E /* ThruHikerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThruHikerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB1AF7B2BC65A940053526E /* ThruHikerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThruHikerUITests.swift; sourceTree = "<group>"; };
+		EEB1AF7D2BC65A940053526E /* ThruHikerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThruHikerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEB1AF5A2BC65A930053526E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970EE6022BCB22C900BA8245 /* MapboxMaps in Frameworks */,
+				97664A302C02B2460041845D /* FirebaseStorage in Frameworks */,
+				97664A322C02B2FD0041845D /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB1AF6A2BC65A940053526E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB1AF742BC65A940053526E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9786706A2BF69702009A018F /* Route Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9726207C2BF93732006A069A /* JMB_mile_markers.json */,
+				9726207A2BF9303A006A069A /* Continental_mile_markers.json */,
+				972620782BF92AB6006A069A /* Everest_mile_markers.json */,
+				97D11C9D2BF6B58A00680BE9 /* JMT_mile_markers.json */,
+				978670682BF69702009A018F /* AT_mile_markers.json */,
+				978670692BF69702009A018F /* PCT_mile_markers.json */,
+			);
+			path = "Route Assets";
+			sourceTree = "<group>";
+		};
+		978670712BF69702009A018F /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				9786706B2BF69702009A018F /* MapView.swift */,
+				9786706C2BF69702009A018F /* RouteCardView.swift */,
+				9786706D2BF69702009A018F /* RouteDetailView.swift */,
+				9786706F2BF69702009A018F /* RouteView.swift */,
+				978670702BF69702009A018F /* sampleRoutes.swift */,
+				97D11C9F2BF6F70900680BE9 /* MapPreView.swift */,
+				972620742BF764EC006A069A /* FlickrManager.swift */,
+				972620762BF76C95006A069A /* WeatherManager.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		97F68F112C01558100CA9E6B /* MainStuff */ = {
+			isa = PBXGroup;
+			children = (
+				97F68F142C01560500CA9E6B /* RoutesViewModel.swift */,
+				97F68F122C0155B000CA9E6B /* InProgressView.swift */,
+				97F68F0D2C0154EF00CA9E6B /* MainView.swift */,
+				9786706E2BF69702009A018F /* RouteExploreView.swift */,
+				97F68F0F2C01557000CA9E6B /* CompletedView.swift */,
+			);
+			path = MainStuff;
+			sourceTree = "<group>";
+		};
+		EEB1AF542BC65A930053526E = {
+			isa = PBXGroup;
+			children = (
+				97CCB4B92C08E02F00F62C2C /* PrivacyInfo.xcprivacy */,
+				EEB1AF5F2BC65A930053526E /* ThruHiker */,
+				EEB1AF702BC65A940053526E /* ThruHikerTests */,
+				EEB1AF7A2BC65A940053526E /* ThruHikerUITests */,
+				EEB1AF5E2BC65A930053526E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEB1AF5E2BC65A930053526E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEB1AF5D2BC65A930053526E /* ThruHiker.app */,
+				EEB1AF6D2BC65A940053526E /* ThruHikerTests.xctest */,
+				EEB1AF772BC65A940053526E /* ThruHikerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEB1AF5F2BC65A930053526E /* ThruHiker */ = {
+			isa = PBXGroup;
+			children = (
+				975238972C02AD2100D7BE0D /* GoogleService-Info.plist */,
+				97F68F112C01558100CA9E6B /* MainStuff */,
+				97D11C9C2BF6A93000680BE9 /* ThruHiker.entitlements */,
+				978670722BF69702009A018F /* HealthKitView.swift */,
+				9786706A2BF69702009A018F /* Route Assets */,
+				978670712BF69702009A018F /* Routes */,
+				972AE6D72BCB20A100F078B7 /* Info.plist */,
+				EEB1AF602BC65A930053526E /* ThruHikerApp.swift */,
+				970EF7AF2BD6EFE200BA8245 /* JSONmanager.swift */,
+				EEB1AF622BC65A930053526E /* ContentView.swift */,
+				EEB1AF642BC65A940053526E /* Assets.xcassets */,
+				EEB1AF662BC65A940053526E /* Preview Content */,
+			);
+			path = ThruHiker;
+			sourceTree = "<group>";
+		};
+		EEB1AF662BC65A940053526E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EEB1AF672BC65A940053526E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEB1AF702BC65A940053526E /* ThruHikerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEB1AF712BC65A940053526E /* ThruHikerTests.swift */,
+			);
+			path = ThruHikerTests;
+			sourceTree = "<group>";
+		};
+		EEB1AF7A2BC65A940053526E /* ThruHikerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEB1AF7B2BC65A940053526E /* ThruHikerUITests.swift */,
+				EEB1AF7D2BC65A940053526E /* ThruHikerUITestsLaunchTests.swift */,
+			);
+			path = ThruHikerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEB1AF5C2BC65A930053526E /* ThruHiker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB1AF812BC65A940053526E /* Build configuration list for PBXNativeTarget "ThruHiker" */;
+			buildPhases = (
+				EEB1AF592BC65A930053526E /* Sources */,
+				EEB1AF5A2BC65A930053526E /* Frameworks */,
+				EEB1AF5B2BC65A930053526E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThruHiker;
+			packageProductDependencies = (
+				970EE6012BCB22C900BA8245 /* MapboxMaps */,
+				97664A2F2C02B2460041845D /* FirebaseStorage */,
+				97664A312C02B2FD0041845D /* FirebaseFirestore */,
+			);
+			productName = ThruHiker;
+			productReference = EEB1AF5D2BC65A930053526E /* ThruHiker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEB1AF6C2BC65A940053526E /* ThruHikerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB1AF842BC65A940053526E /* Build configuration list for PBXNativeTarget "ThruHikerTests" */;
+			buildPhases = (
+				EEB1AF692BC65A940053526E /* Sources */,
+				EEB1AF6A2BC65A940053526E /* Frameworks */,
+				EEB1AF6B2BC65A940053526E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEB1AF6F2BC65A940053526E /* PBXTargetDependency */,
+			);
+			name = ThruHikerTests;
+			productName = ThruHikerTests;
+			productReference = EEB1AF6D2BC65A940053526E /* ThruHikerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEB1AF762BC65A940053526E /* ThruHikerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB1AF872BC65A940053526E /* Build configuration list for PBXNativeTarget "ThruHikerUITests" */;
+			buildPhases = (
+				EEB1AF732BC65A940053526E /* Sources */,
+				EEB1AF742BC65A940053526E /* Frameworks */,
+				EEB1AF752BC65A940053526E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEB1AF792BC65A940053526E /* PBXTargetDependency */,
+			);
+			name = ThruHikerUITests;
+			productName = ThruHikerUITests;
+			productReference = EEB1AF772BC65A940053526E /* ThruHikerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEB1AF552BC65A930053526E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					EEB1AF5C2BC65A930053526E = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					EEB1AF6C2BC65A940053526E = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = EEB1AF5C2BC65A930053526E;
+					};
+					EEB1AF762BC65A940053526E = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = EEB1AF5C2BC65A930053526E;
+					};
+				};
+			};
+			buildConfigurationList = EEB1AF582BC65A930053526E /* Build configuration list for PBXProject "ThruHiker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEB1AF542BC65A930053526E;
+			packageReferences = (
+				970EE6002BCB22C900BA8245 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				97664A2E2C02B2460041845D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = EEB1AF5E2BC65A930053526E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEB1AF5C2BC65A930053526E /* ThruHiker */,
+				EEB1AF6C2BC65A940053526E /* ThruHikerTests */,
+				EEB1AF762BC65A940053526E /* ThruHikerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEB1AF5B2BC65A930053526E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9726207D2BF93732006A069A /* JMB_mile_markers.json in Resources */,
+				EEB1AF682BC65A940053526E /* Preview Assets.xcassets in Resources */,
+				975238982C02AD2100D7BE0D /* GoogleService-Info.plist in Resources */,
+				97D11C9E2BF6B58A00680BE9 /* JMT_mile_markers.json in Resources */,
+				978670732BF69702009A018F /* AT_mile_markers.json in Resources */,
+				972620792BF92AB6006A069A /* Everest_mile_markers.json in Resources */,
+				978670742BF69702009A018F /* PCT_mile_markers.json in Resources */,
+				9726207B2BF9303A006A069A /* Continental_mile_markers.json in Resources */,
+				97CCB4BA2C08E02F00F62C2C /* PrivacyInfo.xcprivacy in Resources */,
+				EEB1AF652BC65A940053526E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB1AF6B2BC65A940053526E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB1AF752BC65A940053526E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEB1AF592BC65A930053526E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9786707A2BF69702009A018F /* sampleRoutes.swift in Sources */,
+				97F68F0E2C0154EF00CA9E6B /* MainView.swift in Sources */,
+				97F68F152C01560500CA9E6B /* RoutesViewModel.swift in Sources */,
+				970EF7B02BD6EFE200BA8245 /* JSONmanager.swift in Sources */,
+				97D11CA02BF6F70900680BE9 /* MapPreView.swift in Sources */,
+				978670752BF69702009A018F /* MapView.swift in Sources */,
+				97F68F102C01557000CA9E6B /* CompletedView.swift in Sources */,
+				97F68F132C0155B000CA9E6B /* InProgressView.swift in Sources */,
+				972620772BF76C95006A069A /* WeatherManager.swift in Sources */,
+				972620752BF764EC006A069A /* FlickrManager.swift in Sources */,
+				EEB1AF632BC65A930053526E /* ContentView.swift in Sources */,
+				978670762BF69702009A018F /* RouteCardView.swift in Sources */,
+				978670772BF69702009A018F /* RouteDetailView.swift in Sources */,
+				9786707B2BF69702009A018F /* HealthKitView.swift in Sources */,
+				978670792BF69702009A018F /* RouteView.swift in Sources */,
+				978670782BF69702009A018F /* RouteExploreView.swift in Sources */,
+				EEB1AF612BC65A930053526E /* ThruHikerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB1AF692BC65A940053526E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB1AF722BC65A940053526E /* ThruHikerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB1AF732BC65A940053526E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB1AF7C2BC65A940053526E /* ThruHikerUITests.swift in Sources */,
+				EEB1AF7E2BC65A940053526E /* ThruHikerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEB1AF6F2BC65A940053526E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEB1AF5C2BC65A930053526E /* ThruHiker */;
+			targetProxy = EEB1AF6E2BC65A940053526E /* PBXContainerItemProxy */;
+		};
+		EEB1AF792BC65A940053526E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEB1AF5C2BC65A930053526E /* ThruHiker */;
+			targetProxy = EEB1AF782BC65A940053526E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EEB1AF7F2BC65A940053526E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEB1AF802BC65A940053526E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEB1AF822BC65A940053526E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ThruHiker/ThruHiker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThruHiker/Preview Content\"";
+				DEVELOPMENT_TEAM = P8B6Y7T9NR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThruHiker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThruHiker;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To read the health data and show it in the application. Fetch users daily steps and distance walked to overlay progress with map.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Access health data used for updating user progress.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThruHiker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EEB1AF832BC65A940053526E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ThruHiker/ThruHiker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThruHiker/Preview Content\"";
+				DEVELOPMENT_TEAM = P8B6Y7T9NR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThruHiker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThruHiker;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To read the health data and show it in the application. Fetch users daily steps and distance walked to overlay progress with map.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Access health data used for updating user progress.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThruHiker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EEB1AF852BC65A940053526E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Z52B45CFP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cse115a.ThruHikerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThruHiker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThruHiker";
+			};
+			name = Debug;
+		};
+		EEB1AF862BC65A940053526E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Z52B45CFP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cse115a.ThruHikerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThruHiker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThruHiker";
+			};
+			name = Release;
+		};
+		EEB1AF882BC65A940053526E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Z52B45CFP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cse115a.ThruHikerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThruHiker;
+			};
+			name = Debug;
+		};
+		EEB1AF892BC65A940053526E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Z52B45CFP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cse115a.ThruHikerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThruHiker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEB1AF582BC65A930053526E /* Build configuration list for PBXProject "ThruHiker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB1AF7F2BC65A940053526E /* Debug */,
+				EEB1AF802BC65A940053526E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB1AF812BC65A940053526E /* Build configuration list for PBXNativeTarget "ThruHiker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB1AF822BC65A940053526E /* Debug */,
+				EEB1AF832BC65A940053526E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB1AF842BC65A940053526E /* Build configuration list for PBXNativeTarget "ThruHikerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB1AF852BC65A940053526E /* Debug */,
+				EEB1AF862BC65A940053526E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB1AF872BC65A940053526E /* Build configuration list for PBXNativeTarget "ThruHikerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB1AF882BC65A940053526E /* Debug */,
+				EEB1AF892BC65A940053526E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		970EE6002BCB22C900BA8245 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		97664A2E2C02B2460041845D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		970EE6012BCB22C900BA8245 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 970EE6002BCB22C900BA8245 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+		97664A2F2C02B2460041845D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97664A2E2C02B2460041845D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		97664A312C02B2FD0041845D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97664A2E2C02B2460041845D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EEB1AF552BC65A930053526E /* Project object */;
+}
